@@ -9,7 +9,7 @@ X11x::X11x() {
 
 }
 
-void  paintPicture(HWND winId, MSG* , long *result) {
+inline static void  paintPicture(HWND winId, MSG* , long *result) {
     RECT winRect1;
     RECT winRectCl;
 

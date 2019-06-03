@@ -8,6 +8,10 @@ class Application1  : public QQuickApplicationWindow
     Q_OBJECT
 public:
     Application1();
+
+    bool nativeEvent(const QByteArray &eventType,
+                           void *message,
+                           long *result) override;
 };
 
 #endif // APPLICATION1_HPP
