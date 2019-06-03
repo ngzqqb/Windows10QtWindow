@@ -47,7 +47,7 @@ inline static void  paintPicture(HWND winId, MSG* , long *result) {
     QPainter paint(&pix);
     QRect rc(0,0,winRect1.right, winRect1.bottom);
 
-    paint.fillRect(rc, QColor(128,128,128));
+    paint.fillRect(rc, QColor(255,0,0));
 
     HBITMAP hBmp = QtWin::toHBITMAP(pix);
     HDC hDC = ::CreateCompatibleDC(hDeviceContext);
